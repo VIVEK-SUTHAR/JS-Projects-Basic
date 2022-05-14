@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/RandomGradient.js" defer></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.5);
+            min-height: 30vh;
+            min-width: 32vh;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 1px 15px 1px lightgray;
+        }
+
+        .card button {
+            width: max-content;
+            height: max-content;
+            min-width: 60%;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .card p {
+            margin: 1rem 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #copy {
+            max-width: max-content;
+            max-height: auto;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <button id="btn">Get another Gradient</button>
+        <p id="gradient-css"></p>
+        <div id="copy">Copy CSS</div>
+        <div id="msg"></div>
+    </div>
+</body>
+
+</html>
