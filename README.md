@@ -1,0 +1,3 @@
+# Gradient-generator
+### generate unique and random Gradients with just one click!
+### If you like ,just copy the css and you are good to go...
