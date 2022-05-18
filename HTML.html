@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: cyan;
+        }
+
+        nav {
+            position: fixed;
+            right: 10px;
+            top: 10%;
+            min-height: 80%;
+            min-width: 15%;
+            background-color: aliceblue;
+            border-radius: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        nav ul li:first-child {
+            margin: 0;
+        }
+
+        nav ul .active {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="liitem active">
+                <img src="/about.svg" alt="">
+                <a href="">Home</a>
+            </li>
+            <li class="liitem">
+                <img src="/about.svg" alt="">
+                <a href="">Home</a>
+            </li>
+            <li class="liitem">
+                <img src="/about.svg" alt="">
+                <a href="">Home</a>
+            </li>
+            <li class="liitem">
+                <img src="/about.svg" alt="">
+                <a href="">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        let item = document.querySelectorAll(".liitem");
+        console.log(item);
+        for (let i = 0; i < item.length; i++) {
+            // alert("hi")
+            item[i].onclick = function () {
+                // alert("hi")
+                let j = 0;
+                while (j < item.length) {
+                    item[j++].className = ".liItem";
+                }
+                item[i].className = ".liItem active";
+            }
+        }
+    </script>
+</body>
+
+</html>
